@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffcc"
+
+    tools:context="fingertest.android.fingertest.MainActivity"
+
+    >
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/finger"
+        android:scaleType="fitXY"
+        android:src="@drawable/finger" />
+
+    <Button
+        android:id="@+id/startAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Go"
+        android:onClick="verify" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Password Manager"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#ff0000"
+        android:textStyle="bold"  />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/pwd"
+        android:src="@drawable/pwd" />
+
+    <Button
+        android:text="Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="35dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/button1" />
+    <Button
+        android:text="Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="35dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/purchase_button_not_invalidated" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/startAuth"
+        android:layout_toEndOf="@+id/textView1"
+        android:id="@+id/confirmation_message" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/startAuth"
+        android:layout_alignStart="@+id/confirmation_message"
+        android:id="@+id/encrypted_message" />
+
+</RelativeLayout>
