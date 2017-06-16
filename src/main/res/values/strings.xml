@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Finger Test</string>
+    <string name="fingerprint_hint">Touch the Sensor</string>
+    <string name="use_fingerprint_to_authenticate_key">Use Fingeprint</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized</string>
+    <string name="fingerprint_success">Authentication Success</string>
+    <string name="action_settings">Setiings</string>
+</resources>
